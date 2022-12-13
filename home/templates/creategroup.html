@@ -1,0 +1,23 @@
+{% extends 'background2.html' %}
+
+{% block title %}
+     Create Group
+        {% endblock %}
+{% block heading %}
+<h1 style="text-align:center"><span style="color:white">Create Group</span></h1>
+<p style="text-align:center">
+  Enter Group Name:   <input type="text" name="group name" placeholder="group name" required>
+<br>
+    <br>
+  Find Members: <input type="email" name="email" placeholder="Enter member's email" required>
+<br>
+    <br>
+    <a herf= home.html>
+                <input type="button" value="ADD"> </a>
+    <br>
+    <br>
+     <a herf="{% url 'signup'%}">
+                <input type="button" value="BACK"> </a>
+
+</p>
+{% endblock %}
